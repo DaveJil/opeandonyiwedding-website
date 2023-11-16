@@ -1,3 +1,19 @@
+        // Function to open the popup
+        function openPopup() {
+            document.getElementById('popupContainer').style.display = 'block';
+        }
+    
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById('popupContainer').style.display = 'none';
+        }
+    
+        // Event listener for the button click
+        document.getElementById('popupButton').addEventListener('click', () => {
+            openPopup();
+            console.log('clicked');
+        });
+
 $(document).ready(function () {
 
     /***************** Waypoints ******************/
@@ -163,6 +179,8 @@ $(document).ready(function () {
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
+
+
 
 
     /********************** Toggle Map Content **********************/
